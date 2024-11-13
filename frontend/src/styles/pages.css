@@ -1,1 +1,77 @@
- 
+/* Common Page Styles */
+.page-hero {
+    padding-top: 120px;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+}
+
+/* Documentation Styles */
+.documentation-container {
+    display: flex;
+    min-height: calc(100vh - 76px);
+    margin-top: 76px;
+}
+
+.docs-sidebar {
+    width: 280px;
+    padding: 2rem;
+    border-right: 1px solid #eee;
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 76px);
+    overflow-y: auto;
+}
+
+.docs-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Solutions Page Styles */
+.solution-item {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li:before {
+    content: "✓";
+    color: #0d6efd;
+    position: absolute;
+    left: 0;
+}
+
+/* Contact Page Styles */
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* About Page Styles */
+.team-section .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+} 

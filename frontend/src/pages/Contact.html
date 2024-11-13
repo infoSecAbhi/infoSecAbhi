@@ -1,1 +1,63 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NexSafe Systems</title>
+</head>
+<body>
+    <!-- Include Header Component -->
+
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Contact Us</h1>
+                    <p class="lead">Get in touch with NexSafe Systems. We're here to help.</p>
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form mt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select class="form-select" id="subject">
+                                <option value="support">Support</option>
+                                <option value="sales">Sales</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="contact-info mt-5">
+                        <h3>Other Ways to Connect</h3>
+                        <div class="mt-4">
+                            <h5>Support</h5>
+                            <p>support@nexsafe.com</p>
+                        </div>
+                        <div class="mt-4">
+                            <h5>Sales</h5>
+                            <p>sales@nexsafe.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer Component -->
+</body>
+</html> 
