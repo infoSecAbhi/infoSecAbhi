@@ -328,8 +328,13 @@
 
 /* Content Section Styles */
 .features-section {
-    background: white;
+    background: var(--light);
     padding: 5rem 0;
+}
+
+.features-section h2 {
+    color: var(--dark);
+    margin-bottom: 3rem;
 }
 
 .mission-vision {
@@ -393,24 +398,40 @@
 /* Stats Section Styles */
 .stats-section {
     background: var(--gradient-primary);
+    padding: 5rem 0;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/src/assets/images/pattern.svg') repeat;
+    opacity: 0.1;
 }
 
 .stat-item {
     padding: 2rem;
+    position: relative;
 }
 
 .stat-item h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: white;
 }
 
-.counter {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.stat-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
 }
 
 /* Responsive adjustments */

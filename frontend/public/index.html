@@ -55,10 +55,11 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section py-5">
+    <section class="features-section py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Why Choose NexSafe</h2>
             <div class="row g-4">
+                <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
@@ -66,22 +67,64 @@
                         <p>AI-driven security that adapts to new threats</p>
                     </div>
                 </div>
-                <!-- Add more feature cards -->
+                
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                        <h3>Incident Response</h3>
+                        <p>Rapid automated response to security incidents</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                        <h3>Real-time Monitoring</h3>
+                        <p>24/7 surveillance and threat detection</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section py-5 bg-light">
+    <section class="stats-section py-5">
         <div class="container">
-            <div class="row text-center">
+            <h2 class="text-center mb-5 text-white">Our Impact</h2>
+            <div class="row text-center g-4">
+                <!-- Clients Protected -->
                 <div class="col-md-3">
                     <div class="stat-item">
                         <h3 class="counter">500+</h3>
-                        <p>Clients Protected</p>
+                        <p class="stat-label">Clients Protected</p>
                     </div>
                 </div>
-                <!-- Add more stats -->
+                
+                <!-- Threats Blocked -->
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h3 class="counter">1M+</h3>
+                        <p class="stat-label">Threats Blocked</p>
+                    </div>
+                </div>
+                
+                <!-- Countries Served -->
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h3 class="counter">50+</h3>
+                        <p class="stat-label">Countries Served</p>
+                    </div>
+                </div>
+                
+                <!-- Uptime Percentage -->
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h3 class="counter">99.9%</h3>
+                        <p class="stat-label">System Uptime</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -93,8 +136,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
-            $("#header-placeholder").load("/src/components/Header.html");
-            $("#footer-placeholder").load("/src/components/Footer.html");
+            $("#header-placeholder").load("/src/components/Header.html", function(response, status, xhr) {
+                if (status == "error") {
+                    console.log("Error loading Header: " + xhr.status + " " + xhr.statusText);
+                }
+            });
+            $("#footer-placeholder").load("/src/components/Footer.html", function(response, status, xhr) {
+                if (status == "error") {
+                    console.log("Error loading Footer: " + xhr.status + " " + xhr.statusText);
+                }
+            });
         });
     </script>
 </body>
