@@ -18,9 +18,8 @@
 
 /* Home Page Styles */
 .hero-section {
-    position: relative;
+    padding-top: 100px;
     min-height: calc(100vh - 76px);
-    padding-top: 76px;
     background: var(--light);
 }
 
@@ -77,6 +76,7 @@
 
 /* Solutions Page Styles */
 .solutions-hero {
+    padding-top: 100px;
     background: var(--gradient-primary);
     color: white;
     padding: 120px 0 80px;
@@ -185,6 +185,7 @@
 
 /* About Page Styles */
 .about-hero {
+    padding-top: 100px;
     background: var(--gradient-primary);
     color: white;
     padding: 120px 0 80px;
@@ -218,7 +219,7 @@
 
 /* Contact Page Styles */
 .contact-section {
-    padding-top: 120px;
+    padding-top: 100px;
     background: var(--light);
 }
 
@@ -322,5 +323,107 @@
     
     .contact-form {
         box-shadow: none;
+    }
+}
+
+/* Content Section Styles */
+.features-section {
+    background: white;
+    padding: 5rem 0;
+}
+
+.mission-vision {
+    background: white;
+    padding: 5rem 0;
+}
+
+.team-section {
+    background: var(--light);
+    padding: 5rem 0;
+}
+
+.industry-solutions {
+    background: var(--light);
+    padding: 5rem 0;
+}
+
+/* Card Styles Enhancement */
+.feature-card,
+.industry-card,
+.team-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover,
+.industry-card:hover,
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Hero Carousel Styles */
+.hero-carousel {
+    margin-top: 76px; /* Account for fixed navbar */
+}
+
+.carousel-item {
+    height: calc(100vh - 76px);
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Stats Section Styles */
+.stats-section {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.stat-item {
+    padding: 2rem;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.counter {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .carousel-caption {
+        padding: 1rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
     }
 }

@@ -20,19 +20,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link href="/styles/components.css" rel="stylesheet">
-    <link href="/styles/pages.css" rel="stylesheet">
+    <link href="/src/styles/components.css" rel="stylesheet">
+    <link href="/src/styles/pages.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Root element where pages will be loaded -->
-    <div id="root">
-        <!-- Content from Home.html or other pages will be loaded here -->
-    </div>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header-placeholder"></div>
 
-    <!-- Bootstrap JS Bundle -->
+    <!-- Hero Section with Carousel -->
+    <section class="hero-carousel">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/src/assets/images/hero-1.jpg" class="d-block w-100" alt="Cybersecurity">
+                    <div class="carousel-caption">
+                        <h1>Next-Level Security Solutions</h1>
+                        <p>Protecting your digital assets with AI-powered security</p>
+                        <a href="/solutions" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose NexSafe</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                        <h3>Advanced Protection</h3>
+                        <p>AI-driven security that adapts to new threats</p>
+                    </div>
+                </div>
+                <!-- Add more feature cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h3 class="counter">500+</h3>
+                        <p>Clients Protected</p>
+                    </div>
+                </div>
+                <!-- Add more stats -->
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/src/components/Header.html");
+            $("#footer-placeholder").load("/src/components/Footer.html");
+        });
+    </script>
 </body>
 </html> 

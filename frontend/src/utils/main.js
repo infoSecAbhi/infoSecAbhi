@@ -7,22 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Load appropriate page content based on URL
         switch(path) {
             case '/':
-                loadPage('/pages/Home.html');
+                loadPage('/src/pages/Home.html');
                 break;
             case '/solutions':
-                loadPage('/pages/Solutions.html');
+                loadPage('/src/pages/Solutions.html');
                 break;
             case '/docs':
-                loadPage('/pages/Documentation.html');
+                loadPage('/src/pages/Documentation.html');
                 break;
             case '/about':
-                loadPage('/pages/About.html');
+                loadPage('/src/pages/About.html');
                 break;
             case '/contact':
-                loadPage('/pages/Contact.html');
+                loadPage('/src/pages/Contact.html');
                 break;
             default:
-                loadPage('/pages/404.html');
+                loadPage('/src/pages/404.html');
         }
     };
 
