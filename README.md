@@ -5,21 +5,17 @@ File Structure:
 nexsafe-systems/
 ├── frontend/
 │   ├── public/
-│   │   ├── images/
+│   │   ├── index.html
 │   │   └── favicon.ico
-│   ├── src/
+│   └── src/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── styles/
 │   │   └── utils/
-│   ├── package.json
-│   └── index.html
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── config/
-│   ├── package.json
+|   |   └── assets/
+|   |       └── images/
+│   └── package.json
+│   └── package-lock.json
 │   └── server.js
-└── README.md
+│   └── README.md
+|   └── node_modules/
