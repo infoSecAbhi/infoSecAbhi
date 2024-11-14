@@ -1,9 +1,8 @@
 /* Header Styles */
 .navbar {
-    padding: 1rem 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-sm);
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -11,11 +10,14 @@
 }
 
 .navbar-brand img {
-    max-height: 40px;
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
 }
 
 .nav-link {
-    color: var(--dark) !important;
+    color: #333333 !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -99,4 +101,9 @@
 .footer h5, .footer h6 {
     color: white;
     margin-bottom: 1.5rem;
+}
+
+.navbar .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 } 
