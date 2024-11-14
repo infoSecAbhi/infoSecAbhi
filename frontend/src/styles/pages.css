@@ -185,7 +185,7 @@
 .documentation-container {
     display: flex;
     min-height: calc(100vh - 76px);
-    margin-top: 76px;
+    margin-top: 0;
 }
 
 .docs-sidebar {
@@ -197,6 +197,8 @@
     height: calc(100vh - 76px);
     overflow-y: auto;
     background: white;
+    margin-top: 0;
+    padding-top: 1rem;
 }
 
 .docs-sidebar .nav-group {
@@ -225,8 +227,10 @@
 .docs-content {
     flex: 1;
     padding: 2rem;
+    padding-left: 1rem;
     max-width: 900px;
     margin: 0 auto;
+    margin-left: 0;
 }
 
 /* About Page Styles */
@@ -505,4 +509,10 @@
 /* Add this to ensure footer doesn't overlap */
 #footer-placeholder {
     margin-top: auto;
+}
+
+/* Optional: If you want to adjust spacing of the first heading */
+.docs-content h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
