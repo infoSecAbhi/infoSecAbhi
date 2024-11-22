@@ -8,20 +8,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/solutions.html">Solutions</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                        Solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/solutions/endpoint-protection">NexSafe Endpoint Protection</a></li>
+                        <li><a class="dropdown-item" href="/solutions/cloud-security">AI-Powered CSPM (Coming Soon)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services/risk-assessment">Security Risk Assessment</a></li>
+                        <li><a class="dropdown-item" href="/services/compliance">Compliance Services</a></li>
+                        <li><a class="dropdown-item" href="/services/control-testing">Security Control Testing</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/documentation.html">Docs</a>
+                    <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/about.html">About</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-primary ms-2" href="/src/pages/Contact.html">Get Started</a>
+                    <a class="btn btn-primary ms-2" href="/contact">Get Started</a>
                 </li>
             </ul>
         </div>

@@ -21,8 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
             case '/contact':
                 loadPage('/src/pages/Contact.html');
                 break;
-            default:
-                loadPage('/src/pages/404.html');
+            case '/solutions/endpoint-protection':
+                loadPage('/src/pages/solutions/EndpointProtection.html');
+                break;
+            case '/solutions/cloud-security':
+                loadPage('/src/pages/solutions/CloudSecurity.html');
+                break;
+            case '/services/risk-assessment':
+                loadPage('/src/pages/services/RiskAssessment.html');
+                break;
+            case '/services/compliance':
+                loadPage('/src/pages/services/Compliance.html');
+                break;
+            case '/services/control-testing':
+                loadPage('/src/pages/services/ControlTesting.html');
+                break;
         }
     };
 
